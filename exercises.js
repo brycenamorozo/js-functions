@@ -3,7 +3,7 @@
  
 * i.e. A function to generate a greeting to specific person you designate:*/
 
-// Step One: Define the function.
+ //Step One: Define the function.
 function greeting(guest){ // takes in a parameter named 'guest' which acts like a local variable inside the function
  return "Good afternoon " + guest + ".";  // the output value after the function is invoked
 }
@@ -26,7 +26,8 @@ console.log(testGreeting); // printing the output value of the function.
  *
  * These two variables will be used to invoke the functions #2 - #5.
 */ 
-
+var bango1 = 8
+var bango2 = 6
 
 /*
  * #2
@@ -43,9 +44,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `sum` to test your code.
 */
 
-
-
-
+function add(num1,num2) {
+  return num1 + num2
+}
+var sum = add(bango1,bango2)
+console.log(sum)
 /*
  * #3
  * Function - subtract
@@ -60,10 +63,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `difference` to test your code.
 */ 
 
-
-
-
-
+function subtract(num1,num2) {
+  return num1 - num2
+}
+var difference = subtract(bango1,bango2)
+console.log(difference)
 
 /*
  * #4
@@ -79,8 +83,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `product` to test your code.
 */
 
-
-
+function multiply(num1,num2) {
+  return num1 * num2
+}
+var product = multiply(bango1,bango2)
+console.log(product)
 
 /*
  * #5
@@ -96,7 +103,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `quotient` to test your code.
 */
 
-
+function divide(num1,num2) {
+  return num1/num2
+}
+var quotient = divide(bango1,bango2)
+console.log(quotient)
 
 /*
  * #6
@@ -110,9 +121,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.
 */
 
+function checkSum() {
+  return ("Mariah Carey has been married "+ sum +" amount of times.")
 
-
-
+}
+console.log(checkSum(sum))
 
 /*
  * #7
@@ -127,7 +140,10 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your results.
 */ 
 
-
+function checkDifference() {
+  return ('Last night I dreamt that I ate '+ difference +' Taco Bell soft tacos')
+}
+console.log(checkDifference(difference))
 
 /*
  * #8
@@ -140,6 +156,10 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.  
 */
 
+function checkProduct() {
+ return sum * product
+}
+console.log(checkProduct())
 
 /*
  * #9
@@ -152,7 +172,10 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.  
 */
 
-
+function checkQuotient() {
+  return product/quotient
+}
+console.log(checkQuotient())
 
 /*
  * #10
@@ -174,7 +197,14 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.
 */ 
 
+var bango3 = 3
+var bango4 = 4
+var bango5 = 5
 
+function addThenSubtract() {
+  return (bango3 + bango4) - bango5
+}
+console.log(addThenSubtract())
 
 
 /*
@@ -191,9 +221,10 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.
 */ 
 
-
+function multiplyThenDivide() {
+  return (bango1 * bango2) / bango3
 }
-
+console.log(multiplyThenDivide())
 
 /*
  * #12
@@ -207,7 +238,10 @@ console.log(testGreeting); // printing the output value of the function.
  *  This function `returns` back a string which represents someone's full name. Invoke this function by passing in your first  and last name into the function. Store the return value into a variable named `myFullName` and console.log this variable to show your result.
 */
 
-
+function createFullName(firstName, lastName) {
+  return firstName + lastName
+}
+console.log(createFullName('Brycen ', 'Amorozo'))
 
 /*
  * #13 
@@ -223,7 +257,10 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.
  */
 
-
+function createFullName(firstName, lastName, food) {
+  return firstName + lastName + food
+}
+console.log(createFullName('Brycen ', 'Amorozo ', 'eats croissantwiches everyday for breakfast.'))
 
 /************** ENGAGE HYPERDRIVE **************/
 /* No more training wheels! For the exercises #14-18, use the experience you've

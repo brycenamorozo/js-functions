@@ -121,11 +121,11 @@ console.log(quotient)
  * Console.log your result.
 */
 
-function checkSum() {
-  return ("Mariah Carey has been married "+ sum +" amount of times.")
+function checkSum(x) {
+  return ("Mariah Carey has been married "+ x +" amount of times.")
 
 }
-console.log(checkSum(sum))
+console.log(checkSum(17))
 
 /*
  * #7
@@ -140,10 +140,10 @@ console.log(checkSum(sum))
  * Console.log your results.
 */ 
 
-function checkDifference() {
-  return ('Last night I dreamt that I ate '+ difference +' Taco Bell soft tacos')
+function checkDifference(x) {
+  return ('Last night I dreamt that I ate '+ x +' Taco Bell soft tacos')
 }
-console.log(checkDifference(difference))
+console.log(checkDifference(12))
 
 /*
  * #8
@@ -257,10 +257,10 @@ console.log(createFullName('Brycen ', 'Amorozo'))
  * Console.log your result.
  */
 
-function createFullName(firstName, lastName, food) {
-  return firstName + lastName + food
+function eatFood(firstName, lastName, food) {
+  return firstName + lastName + 'eats' + food + 'everyday for breakfast.'
 }
-console.log(createFullName('Brycen ', 'Amorozo ', 'eats croissantwiches everyday for breakfast.'))
+console.log(eatFood('Brycen ', 'Amorozo ', 'croissantwiches '))
 
 /************** ENGAGE HYPERDRIVE **************/
 /* No more training wheels! For the exercises #14-18, use the experience you've
@@ -275,7 +275,10 @@ console.log(createFullName('Brycen ', 'Amorozo ', 'eats croissantwiches everyday
  * Console.log your result. 
 */
 
-
+function shoeconverter(inches) {
+  return inches * 2.54
+}
+console.log(shoeconverter(11))
 
 /*
  * #15
@@ -287,7 +290,10 @@ console.log(createFullName('Brycen ', 'Amorozo ', 'eats croissantwiches everyday
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
  
-
+var str = 'yeeeeet'
+function toUpperCase(str) {
+}
+console.log(str.toUpperCase())
 
 /*
  * #16
@@ -297,7 +303,10 @@ console.log(createFullName('Brycen ', 'Amorozo ', 'eats croissantwiches everyday
  * Console.log your result.
 */
 
-
+var str = 'yeeeeet'
+function oneCap(str) {
+}
+//console.log(str.oneCap())
 
 /*
  * #17
@@ -309,17 +318,29 @@ console.log(createFullName('Brycen ', 'Amorozo ', 'eats croissantwiches everyday
  * Call this function and pass in a number value.
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
-
-
-
+function verifyDrinkingAge(age) {
+  if (age >= 21) {
+    return true
+  }
+  else {
+    return false
+  }
+}
+canDrink = verifyDrinkingAge(16)
+console.log(canDrink)
 /**
  * #18
  * Function - throwParty
  * Create a function named throwParty. This function will check the value stored in the `canDrink` variable in the previous exercise. If the value is true, it will return the message "Cheee Hoo! We going to da party!" If false, then it will return the message "Meh, see you at Starbucks." Store the return value to a variable named `canParty`. Console.log your result.
  */
-
-
-
-
+function throwParty(age) {
+if (canDrink) {
+  return ("Cheee Hoo! We going to da party!")
+}
+else {
+  return ("Meh, see you at Starbucks.")
+}
+}
+console.log(throwParty())
 
 
